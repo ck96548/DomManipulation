@@ -32,16 +32,30 @@
  
 // GETELEMENTSBYCLASSNAME //
 var items = document.getElementsByClassName('list-group-item');
-console.log(items);
-console.log(items[1]);
-items[1].textContent = 'Hello 2';
-items[2].style.fontWeight = 'bold';
-
+// console.log(items);
+// console.log(items[1]);
+// items[1].textContent = 'Hello 2';
+// items[2].style.fontWeight = 'bold';
 // Gives error
 //items.style.backgroundColor = '#f4f4f4';
 for(var i = 0; i < items.length; i++){
-    items[i].style.fontWeight = 'bold'
-   items[i].style.backgroundColor = '#f4f4f4';
-   items[2].style.backgroundColor = 'green';
- }
+    //items[i].style.fontWeight = 'bold'
+   //items[i].style.backgroundColor = '#f4f4f4';
+   items[i].style.color = '#30dce6'
+   i//tems[2].style.backgroundColor = 'green';
+}
+
+
+// GETELEMENTSBYTAGNAME //
+var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[1]);
+
+// Gives error
+//items.style.backgroundColor = '#f4f4f4';
+
+for(var i = 0; i < li.length; i++){
+  li[i].style.backgroundColor = '#4a4943';
+  li[4].style.color = 'green'
+}
 
